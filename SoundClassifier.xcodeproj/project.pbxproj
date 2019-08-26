@@ -9,19 +9,85 @@
 /* Begin PBXBuildFile section */
 		6C0D06AE23115F390055A9AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D06AD23115F390055A9AB /* AppDelegate.swift */; };
 		6C0D06B023115F390055A9AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D06AF23115F390055A9AB /* ViewController.swift */; };
-		6C0D06B323115F390055A9AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06B123115F390055A9AB /* Main.storyboard */; };
 		6C0D06B523115F3B0055A9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06B423115F3B0055A9AB /* Assets.xcassets */; };
 		6C0D06B823115F3B0055A9AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06B623115F3B0055A9AB /* LaunchScreen.storyboard */; };
+		6C0D06C023115F6E0055A9AB /* SoundClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D06BF23115F6E0055A9AB /* SoundClassification.mlmodel */; };
+		6C0D06D1231171710055A9AB /* libAudioPreprocessing.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0D06D0231171710055A9AB /* libAudioPreprocessing.dylib */; };
+		6C0D06D2231171780055A9AB /* libAudioPreprocessing.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06D0231171710055A9AB /* libAudioPreprocessing.dylib */; };
+		6C0D06D3231171810055A9AB /* libAudioPreprocessing.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 6C0D06D0231171710055A9AB /* libAudioPreprocessing.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6C0D0707231185EC0055A9AB /* sneezing_1_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06EC231185EB0055A9AB /* sneezing_1_converted.wav */; };
+		6C0D0708231185EC0055A9AB /* sneezing_2_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06ED231185EB0055A9AB /* sneezing_2_converted.wav */; };
+		6C0D0709231185EC0055A9AB /* sneezing_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06EE231185EB0055A9AB /* sneezing_3.wav */; };
+		6C0D070A231185EC0055A9AB /* sneezing_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06EF231185EB0055A9AB /* sneezing_2.wav */; };
+		6C0D070B231185EC0055A9AB /* sneezing_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F0231185EB0055A9AB /* sneezing_1.wav */; };
+		6C0D070C231185EC0055A9AB /* sneezing_3_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F1231185EB0055A9AB /* sneezing_3_converted.wav */; };
+		6C0D070D231185EC0055A9AB /* dog_3_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F3231185EB0055A9AB /* dog_3_converted.wav */; };
+		6C0D070E231185EC0055A9AB /* dog_2_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F4231185EB0055A9AB /* dog_2_converted.wav */; };
+		6C0D070F231185EC0055A9AB /* dog_1_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F5231185EB0055A9AB /* dog_1_converted.wav */; };
+		6C0D0710231185EC0055A9AB /* dog_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F6231185EB0055A9AB /* dog_2.wav */; };
+		6C0D0711231185EC0055A9AB /* dog_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F7231185EB0055A9AB /* dog_3.wav */; };
+		6C0D0712231185EC0055A9AB /* dog_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06F8231185EB0055A9AB /* dog_1.wav */; };
+		6C0D0713231185EC0055A9AB /* helicopter_3_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06FA231185EC0055A9AB /* helicopter_3_converted.wav */; };
+		6C0D0714231185EC0055A9AB /* helicopter_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06FB231185EC0055A9AB /* helicopter_2.wav */; };
+		6C0D0715231185EC0055A9AB /* helicopter_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06FC231185EC0055A9AB /* helicopter_3.wav */; };
+		6C0D0716231185EC0055A9AB /* helicopter_1_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06FD231185EC0055A9AB /* helicopter_1_converted.wav */; };
+		6C0D0717231185EC0055A9AB /* helicopter_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06FE231185EC0055A9AB /* helicopter_1.wav */; };
+		6C0D0718231185EC0055A9AB /* helicopter_2_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D06FF231185EC0055A9AB /* helicopter_2_converted.wav */; };
+		6C0D0719231185EC0055A9AB /* rooster_2_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D0701231185EC0055A9AB /* rooster_2_converted.wav */; };
+		6C0D071A231185EC0055A9AB /* rooster_1_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D0702231185EC0055A9AB /* rooster_1_converted.wav */; };
+		6C0D071B231185EC0055A9AB /* rooster_3_converted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D0703231185EC0055A9AB /* rooster_3_converted.wav */; };
+		6C0D071C231185EC0055A9AB /* rooster_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D0704231185EC0055A9AB /* rooster_1.wav */; };
+		6C0D071D231185EC0055A9AB /* rooster_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D0705231185EC0055A9AB /* rooster_3.wav */; };
+		6C0D071E231185EC0055A9AB /* rooster_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D0706231185EC0055A9AB /* rooster_2.wav */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C0D06D4231171810055A9AB /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6C0D06D3231171810055A9AB /* libAudioPreprocessing.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6C0D06AA23115F390055A9AB /* SoundClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0D06AD23115F390055A9AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C0D06AF23115F390055A9AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C0D06B223115F390055A9AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C0D06B423115F3B0055A9AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C0D06B723115F3B0055A9AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C0D06B923115F3B0055A9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C0D06BF23115F6E0055A9AB /* SoundClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoundClassification.mlmodel; sourceTree = "<group>"; };
+		6C0D06D0231171710055A9AB /* libAudioPreprocessing.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libAudioPreprocessing.dylib; sourceTree = "<group>"; };
+		6C0D06EC231185EB0055A9AB /* sneezing_1_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sneezing_1_converted.wav; sourceTree = "<group>"; };
+		6C0D06ED231185EB0055A9AB /* sneezing_2_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sneezing_2_converted.wav; sourceTree = "<group>"; };
+		6C0D06EE231185EB0055A9AB /* sneezing_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sneezing_3.wav; sourceTree = "<group>"; };
+		6C0D06EF231185EB0055A9AB /* sneezing_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sneezing_2.wav; sourceTree = "<group>"; };
+		6C0D06F0231185EB0055A9AB /* sneezing_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sneezing_1.wav; sourceTree = "<group>"; };
+		6C0D06F1231185EB0055A9AB /* sneezing_3_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sneezing_3_converted.wav; sourceTree = "<group>"; };
+		6C0D06F3231185EB0055A9AB /* dog_3_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_3_converted.wav; sourceTree = "<group>"; };
+		6C0D06F4231185EB0055A9AB /* dog_2_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_2_converted.wav; sourceTree = "<group>"; };
+		6C0D06F5231185EB0055A9AB /* dog_1_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_1_converted.wav; sourceTree = "<group>"; };
+		6C0D06F6231185EB0055A9AB /* dog_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_2.wav; sourceTree = "<group>"; };
+		6C0D06F7231185EB0055A9AB /* dog_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_3.wav; sourceTree = "<group>"; };
+		6C0D06F8231185EB0055A9AB /* dog_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_1.wav; sourceTree = "<group>"; };
+		6C0D06FA231185EC0055A9AB /* helicopter_3_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_3_converted.wav; sourceTree = "<group>"; };
+		6C0D06FB231185EC0055A9AB /* helicopter_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_2.wav; sourceTree = "<group>"; };
+		6C0D06FC231185EC0055A9AB /* helicopter_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_3.wav; sourceTree = "<group>"; };
+		6C0D06FD231185EC0055A9AB /* helicopter_1_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_1_converted.wav; sourceTree = "<group>"; };
+		6C0D06FE231185EC0055A9AB /* helicopter_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_1.wav; sourceTree = "<group>"; };
+		6C0D06FF231185EC0055A9AB /* helicopter_2_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_2_converted.wav; sourceTree = "<group>"; };
+		6C0D0701231185EC0055A9AB /* rooster_2_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster_2_converted.wav; sourceTree = "<group>"; };
+		6C0D0702231185EC0055A9AB /* rooster_1_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster_1_converted.wav; sourceTree = "<group>"; };
+		6C0D0703231185EC0055A9AB /* rooster_3_converted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster_3_converted.wav; sourceTree = "<group>"; };
+		6C0D0704231185EC0055A9AB /* rooster_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster_1.wav; sourceTree = "<group>"; };
+		6C0D0705231185EC0055A9AB /* rooster_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster_3.wav; sourceTree = "<group>"; };
+		6C0D0706231185EC0055A9AB /* rooster_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster_2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0D06D1231171710055A9AB /* libAudioPreprocessing.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +121,71 @@
 		6C0D06AC23115F390055A9AB /* SoundClassifier */ = {
 			isa = PBXGroup;
 			children = (
+				6C0D06F2231185EB0055A9AB /* dog */,
+				6C0D06F9231185EC0055A9AB /* helicopter */,
+				6C0D0700231185EC0055A9AB /* rooster */,
+				6C0D06EB231185EB0055A9AB /* sneezing */,
 				6C0D06AD23115F390055A9AB /* AppDelegate.swift */,
 				6C0D06AF23115F390055A9AB /* ViewController.swift */,
-				6C0D06B123115F390055A9AB /* Main.storyboard */,
+				6C0D06BF23115F6E0055A9AB /* SoundClassification.mlmodel */,
+				6C0D06D0231171710055A9AB /* libAudioPreprocessing.dylib */,
 				6C0D06B423115F3B0055A9AB /* Assets.xcassets */,
 				6C0D06B623115F3B0055A9AB /* LaunchScreen.storyboard */,
 				6C0D06B923115F3B0055A9AB /* Info.plist */,
 			);
 			path = SoundClassifier;
+			sourceTree = "<group>";
+		};
+		6C0D06EB231185EB0055A9AB /* sneezing */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D06EC231185EB0055A9AB /* sneezing_1_converted.wav */,
+				6C0D06ED231185EB0055A9AB /* sneezing_2_converted.wav */,
+				6C0D06EE231185EB0055A9AB /* sneezing_3.wav */,
+				6C0D06EF231185EB0055A9AB /* sneezing_2.wav */,
+				6C0D06F0231185EB0055A9AB /* sneezing_1.wav */,
+				6C0D06F1231185EB0055A9AB /* sneezing_3_converted.wav */,
+			);
+			path = sneezing;
+			sourceTree = "<group>";
+		};
+		6C0D06F2231185EB0055A9AB /* dog */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D06F3231185EB0055A9AB /* dog_3_converted.wav */,
+				6C0D06F4231185EB0055A9AB /* dog_2_converted.wav */,
+				6C0D06F5231185EB0055A9AB /* dog_1_converted.wav */,
+				6C0D06F6231185EB0055A9AB /* dog_2.wav */,
+				6C0D06F7231185EB0055A9AB /* dog_3.wav */,
+				6C0D06F8231185EB0055A9AB /* dog_1.wav */,
+			);
+			path = dog;
+			sourceTree = "<group>";
+		};
+		6C0D06F9231185EC0055A9AB /* helicopter */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D06FA231185EC0055A9AB /* helicopter_3_converted.wav */,
+				6C0D06FB231185EC0055A9AB /* helicopter_2.wav */,
+				6C0D06FC231185EC0055A9AB /* helicopter_3.wav */,
+				6C0D06FD231185EC0055A9AB /* helicopter_1_converted.wav */,
+				6C0D06FE231185EC0055A9AB /* helicopter_1.wav */,
+				6C0D06FF231185EC0055A9AB /* helicopter_2_converted.wav */,
+			);
+			path = helicopter;
+			sourceTree = "<group>";
+		};
+		6C0D0700231185EC0055A9AB /* rooster */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D0701231185EC0055A9AB /* rooster_2_converted.wav */,
+				6C0D0702231185EC0055A9AB /* rooster_1_converted.wav */,
+				6C0D0703231185EC0055A9AB /* rooster_3_converted.wav */,
+				6C0D0704231185EC0055A9AB /* rooster_1.wav */,
+				6C0D0705231185EC0055A9AB /* rooster_3.wav */,
+				6C0D0706231185EC0055A9AB /* rooster_2.wav */,
+			);
+			path = rooster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +198,7 @@
 				6C0D06A623115F390055A9AB /* Sources */,
 				6C0D06A723115F390055A9AB /* Frameworks */,
 				6C0D06A823115F390055A9AB /* Resources */,
+				6C0D06D4231171810055A9AB /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -122,9 +247,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0D0713231185EC0055A9AB /* helicopter_3_converted.wav in Resources */,
+				6C0D0707231185EC0055A9AB /* sneezing_1_converted.wav in Resources */,
+				6C0D0709231185EC0055A9AB /* sneezing_3.wav in Resources */,
+				6C0D06D2231171780055A9AB /* libAudioPreprocessing.dylib in Resources */,
+				6C0D0711231185EC0055A9AB /* dog_3.wav in Resources */,
 				6C0D06B823115F3B0055A9AB /* LaunchScreen.storyboard in Resources */,
+				6C0D0710231185EC0055A9AB /* dog_2.wav in Resources */,
+				6C0D071E231185EC0055A9AB /* rooster_2.wav in Resources */,
+				6C0D071D231185EC0055A9AB /* rooster_3.wav in Resources */,
+				6C0D0717231185EC0055A9AB /* helicopter_1.wav in Resources */,
+				6C0D070E231185EC0055A9AB /* dog_2_converted.wav in Resources */,
+				6C0D070A231185EC0055A9AB /* sneezing_2.wav in Resources */,
+				6C0D070F231185EC0055A9AB /* dog_1_converted.wav in Resources */,
+				6C0D070B231185EC0055A9AB /* sneezing_1.wav in Resources */,
+				6C0D0715231185EC0055A9AB /* helicopter_3.wav in Resources */,
+				6C0D0712231185EC0055A9AB /* dog_1.wav in Resources */,
+				6C0D0718231185EC0055A9AB /* helicopter_2_converted.wav in Resources */,
+				6C0D0708231185EC0055A9AB /* sneezing_2_converted.wav in Resources */,
+				6C0D0716231185EC0055A9AB /* helicopter_1_converted.wav in Resources */,
+				6C0D071A231185EC0055A9AB /* rooster_1_converted.wav in Resources */,
 				6C0D06B523115F3B0055A9AB /* Assets.xcassets in Resources */,
-				6C0D06B323115F390055A9AB /* Main.storyboard in Resources */,
+				6C0D0714231185EC0055A9AB /* helicopter_2.wav in Resources */,
+				6C0D071B231185EC0055A9AB /* rooster_3_converted.wav in Resources */,
+				6C0D070D231185EC0055A9AB /* dog_3_converted.wav in Resources */,
+				6C0D071C231185EC0055A9AB /* rooster_1.wav in Resources */,
+				6C0D070C231185EC0055A9AB /* sneezing_3_converted.wav in Resources */,
+				6C0D0719231185EC0055A9AB /* rooster_2_converted.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0D06C023115F6E0055A9AB /* SoundClassification.mlmodel in Sources */,
 				6C0D06B023115F390055A9AB /* ViewController.swift in Sources */,
 				6C0D06AE23115F390055A9AB /* AppDelegate.swift in Sources */,
 			);
@@ -143,14 +293,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C0D06B123115F390055A9AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C0D06B223115F390055A9AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6C0D06B623115F3B0055A9AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,10 +426,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N8689FF3X;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SoundClassifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SoundClassifier",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = omar.SoundClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,10 +449,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N8689FF3X;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SoundClassifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SoundClassifier",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = omar.SoundClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
