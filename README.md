@@ -1,6 +1,8 @@
 # A Simple Sound Classifier
 > Sound Classifier Using Turicreate and CoreML
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hKPoEPVP8jGcfC5_mKk9cTWI-Mxvy4zV]
+
 We'll create an iOS application that recognize sounds that are listed in the ESC-50 dataset.
 
 ### Final result
@@ -36,6 +38,10 @@ Set your python environment and run the following script:
 ```
 
 This model is tested on `turicreate v5.7`
+
+##Colab Notebook
+
+https://colab.research.google.com/drive/1hKPoEPVP8jGcfC5_mKk9cTWI-Mxvy4zV
 
 ## About me
 
